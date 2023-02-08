@@ -24,9 +24,11 @@ header {
 }
 
 #jumbotron {
-    height: 400px;
+    width: 100%;
+    height: 25rem;
     background-image: url("https://images.unsplash.com/photo-1674592309639-39067f6a8111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60");
     background-size: cover;
+    background-position: center;
     margin-bottom: 4rem;
 }
 
@@ -36,16 +38,17 @@ header {
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 1rem;
 }
 
 #content {
     text-align: center;
     width: 50%;
-    border: 1px solid blue;
 }
 
 #picture {
    width: 25%;
+   margin-right: 7%;
 }
 
 #picture img{
@@ -53,9 +56,46 @@ header {
     height: auto;
 }
 
+#main {
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+#left {
+    width: 50%;
+}
+
+#right {
+    width: 40%;
+}
+
+.project article {
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 5px 5px;
+    margin-bottom: 4rem;
+}
+
+.blog article {
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.blog article h2{
+    margin-bottom: 0.5rem;
+}
+
+footer{
+    text-align: center;
+}
+
 @media screen and (max-width: 800px){
     body {
-        font-size: 24px;
+        font-size: 12px;
     }
 
     #picture {
